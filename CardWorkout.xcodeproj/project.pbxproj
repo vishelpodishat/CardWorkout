@@ -9,21 +9,24 @@
 /* Begin PBXBuildFile section */
 		1621F9142A1BC00F0016C007 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1621F9132A1BC00F0016C007 /* AppDelegate.swift */; };
 		1621F9162A1BC00F0016C007 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1621F9152A1BC00F0016C007 /* SceneDelegate.swift */; };
-		1621F9182A1BC00F0016C007 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1621F9172A1BC00F0016C007 /* ViewController.swift */; };
-		1621F91B2A1BC00F0016C007 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1621F9192A1BC00F0016C007 /* Main.storyboard */; };
+		1621F9182A1BC00F0016C007 /* CardSelectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1621F9172A1BC00F0016C007 /* CardSelectVC.swift */; };
 		1621F91D2A1BC0100016C007 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1621F91C2A1BC0100016C007 /* Assets.xcassets */; };
 		1621F9202A1BC0100016C007 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1621F91E2A1BC0100016C007 /* LaunchScreen.storyboard */; };
+		1621F9282A1BC91A0016C007 /* CWButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1621F9272A1BC91A0016C007 /* CWButton.swift */; };
+		1621F92B2A1BC9A80016C007 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1621F92A2A1BC9A80016C007 /* SnapKit */; };
+		1621F92D2A1BF3960016C007 /* RulesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1621F92C2A1BF3960016C007 /* RulesVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1621F9102A1BC00F0016C007 /* CardWorkout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardWorkout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1621F9132A1BC00F0016C007 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1621F9152A1BC00F0016C007 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1621F9172A1BC00F0016C007 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1621F91A2A1BC00F0016C007 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1621F9172A1BC00F0016C007 /* CardSelectVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSelectVC.swift; sourceTree = "<group>"; };
 		1621F91C2A1BC0100016C007 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1621F91F2A1BC0100016C007 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1621F9212A1BC0100016C007 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1621F9272A1BC91A0016C007 /* CWButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWButton.swift; sourceTree = "<group>"; };
+		1621F92C2A1BF3960016C007 /* RulesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1621F92B2A1BC9A80016C007 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,8 +62,9 @@
 			children = (
 				1621F9132A1BC00F0016C007 /* AppDelegate.swift */,
 				1621F9152A1BC00F0016C007 /* SceneDelegate.swift */,
-				1621F9172A1BC00F0016C007 /* ViewController.swift */,
-				1621F9192A1BC00F0016C007 /* Main.storyboard */,
+				1621F9172A1BC00F0016C007 /* CardSelectVC.swift */,
+				1621F9272A1BC91A0016C007 /* CWButton.swift */,
+				1621F92C2A1BF3960016C007 /* RulesVC.swift */,
 				1621F91C2A1BC0100016C007 /* Assets.xcassets */,
 				1621F91E2A1BC0100016C007 /* LaunchScreen.storyboard */,
 				1621F9212A1BC0100016C007 /* Info.plist */,
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = CardWorkout;
+			packageProductDependencies = (
+				1621F92A2A1BC9A80016C007 /* SnapKit */,
+			);
 			productName = CardWorkout;
 			productReference = 1621F9102A1BC00F0016C007 /* CardWorkout.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 1621F9072A1BC00E0016C007;
+			packageReferences = (
+				1621F9292A1BC9A80016C007 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 1621F9112A1BC00F0016C007 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +138,6 @@
 			files = (
 				1621F9202A1BC0100016C007 /* LaunchScreen.storyboard in Resources */,
 				1621F91D2A1BC0100016C007 /* Assets.xcassets in Resources */,
-				1621F91B2A1BC00F0016C007 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +148,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1621F9182A1BC00F0016C007 /* ViewController.swift in Sources */,
+				1621F9182A1BC00F0016C007 /* CardSelectVC.swift in Sources */,
+				1621F92D2A1BF3960016C007 /* RulesVC.swift in Sources */,
 				1621F9142A1BC00F0016C007 /* AppDelegate.swift in Sources */,
 				1621F9162A1BC00F0016C007 /* SceneDelegate.swift in Sources */,
+				1621F9282A1BC91A0016C007 /* CWButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1621F9192A1BC00F0016C007 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1621F91A2A1BC00F0016C007 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1621F91E2A1BC0100016C007 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +296,6 @@
 				INFOPLIST_FILE = CardWorkout/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +323,6 @@
 				INFOPLIST_FILE = CardWorkout/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -358,6 +360,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1621F9292A1BC9A80016C007 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1621F92A2A1BC9A80016C007 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1621F9292A1BC9A80016C007 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1621F9082A1BC00E0016C007 /* Project object */;
 }
