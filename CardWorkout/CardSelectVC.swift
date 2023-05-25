@@ -6,14 +6,14 @@
 //
 
 import UIKit
-import SnapKit
+import SnapKit 
 
 class CardSelectVC: UIViewController {
 
     let cardImageView = UIImageView()
-    let stopButton = CWButton(backgroundColor: .systemRed, title: "Stop")
-    let resetButton = CWButton(backgroundColor: .systemGreen, title: "Reset")
-    let rulesButton = CWButton(backgroundColor: .systemBlue, title: "Rules")
+    let stopButton = CWButton(color: .systemRed, title: "Stop", systemImageName: "stop.circle")
+    let resetButton = CWButton(color: .systemGreen, title: "Reset", systemImageName: "arrow.clockwise.circle")
+    let rulesButton = CWButton(color: .systemBlue, title: "Rules", systemImageName: "list.bullet")
     
     var cards = CardDeck.allValues
     var timer: Timer!
@@ -31,6 +31,20 @@ class CardSelectVC: UIViewController {
         timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(showRandomCard), userInfo: nil, repeats: true)
     }
 
+    @objc func showRandomCard() {
+        cardImageView.image = cards.randomElement()
+    }
+    
+    @objc func stopTimer() {
+        timer.invalidate()
+    }
+    
+    @objc func resetTimer() {
+        stopTimer()
+        startTimer()
+    }
+
+    
     func configureUI() {
         configureCardImageView()
         configureStopButton()
@@ -89,20 +103,6 @@ class CardSelectVC: UIViewController {
     @objc func presentRulesVC() {
         present(RulesVC(), animated: true)
     }
-    
-    @objc func showRandomCard() {
-        cardImageView.image = cards.randomElement()
-    }
-    
-    @objc func stopTimer() {
-        timer.invalidate()
-    }
-    
-    @objc func resetTimer() {
-        stopTimer()
-        startTimer()
-    }
-    
 
 }
 
